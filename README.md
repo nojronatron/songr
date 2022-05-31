@@ -5,7 +5,7 @@ A Java Lab project that will be useful during week 3.
 Demonstrates learned skills in:
 
 - Java
-- Spring Initializr, Boot, and Thymeleaf
+- Spring Initializr, Boot DevTools, and Thymeleaf
 - Gradle  
 - HTML and CSS/Bootstrap
 
@@ -23,7 +23,7 @@ Demonstrates learned skills in:
 
 To run this app you can either:
 
-- Use gradle and generate a JAR file `./gradlew build` and then execute `java ${jarfile.JAR}`.
+- Use gradle bootRun: `./gradle bootRun``
 - Open the project in IntelliJ IDEA (or your favorite IDE with Java support) and click the Run button.
 
 The project includes Spring frameworks that includes a running Apache web server, default port: 8080.
