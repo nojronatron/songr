@@ -24,4 +24,9 @@ public class HelloController {
         String result = word.toUpperCase(Locale.ROOT);
         return result;
     }
+
+    @RequestMapping("/")
+    public String rootRoute() {
+        return "index";
+    }
 }

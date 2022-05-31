@@ -13,9 +13,9 @@ Demonstrates learned skills in:
 
 [X] Ensure the SpringApp runs *verified with `gradlew build` and `gradle bootRun`  
 [X] Create a 'hello world' route at '/hello'. Verify functionality by loading the route in the browser.  
-[ ] Create a route that will UPPER CASE any input words => '/hello' should return a static webpage with 'HELLO' on it.  
-[ ] Build-out the uppercase route so that it will upper case *entire sentences*.  
-[ ] Create a basic splash page for the app that includes CSS styling (don't go overboard).  
+[X] Create a route that will UPPER CASE any input words => '/hello' should return a static webpage with 'HELLO' on it.  
+[X] Build-out the uppercase route so that it will upper case *entire sentences*.  
+[X] Create a basic splash page for the app that includes CSS styling (don't go overboard).  
 [ ] Create an Album class as a model in the app. See details below.  
 [ ] Create a route '/albums' that returns three Album instances with hardcoded data on a static template page.  
 [ ] Test constructors, getters, and setters of the Album class.  
@@ -61,10 +61,15 @@ Methods:
 
 ### Enable hot-reload in dev
 
-gradle-wrapper.properties is located in project_root/gradle/
-Updated gradle-wrapper.properties with the following line: `spring.devtools.restart.enabled=true`
+gradle-wrapper.properties is located in `project_root/gradle/`  
+Updated gradle-wrapper.properties with the following line: `spring.devtools.restart.enabled=true`  
+
+See [using devtools](https://docs.spring.io/spring-boot/docs/2.7.0/reference/htmlsingle/#using.devtools) for details.  
+
 ## References and Resources
 
 During the development of this project the following resources (people, websites, documentation, etc) were used:
 
 [Help.md in this repo](./HELP.md)  
+
+Album Art developed on [Canva](https://www.canva.com)  
