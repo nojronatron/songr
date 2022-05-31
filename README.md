@@ -9,28 +9,28 @@ Demonstrates learned skills in:
 - Gradle  
 - HTML and CSS/Bootstrap
 
-## How to Run and Test
-
-To run this app you can either:
-
-- Use gradle and generate a JAR file `./gradlew build` and then execute `java ${jarfile.JAR}`.
-- Open the project in IntelliJ IDEA (or your favorite IDE with Java support) and click the Run button.
-
-The project includes Spring frameworks that includes a running Apache web server, default port: 8080.  
-
 ## Features
 
 [ ] Create a 'hello world' route at '/hello'. Verify functionality by loading the route in the browser.  
-[ ] Create a route that will UPPER CASE any input words => '/hello' should return a static webpage with 'HELLO' somewhere on it.  
+[ ] Create a route that will UPPER CASE any input words => '/hello' should return a static webpage with 'HELLO' on it.  
 [ ] Build-out the uppercase route so that it will upper case *entire sentences*.  
 [ ] Create a basic splash page for the app that includes CSS styling (don't go overboard).  
 [ ] Create an Album class as a model in the app. See details below.  
 [ ] Create a route '/albums' that returns three Album instances with hardcoded data on a static template page.  
 [ ] Test constructors, getters, and setters of the Album class.  
 
-## Testing
+## How to Run
 
-To run tests you can either: 
+To run this app you can either:
+
+- Use gradle and generate a JAR file `./gradlew build` and then execute `java ${jarfile.JAR}`.
+- Open the project in IntelliJ IDEA (or your favorite IDE with Java support) and click the Run button.
+
+The project includes Spring frameworks that includes a running Apache web server, default port: 8080.
+
+## How to Test
+
+To run tests you can either:
 
 - Use gradle: `./gradlew test`
 - Use your IDE that supports Java and JUnit Jupiter testing e.g. IntelliJ IDEA
@@ -60,4 +60,4 @@ Methods:
 
 During the development of this project the following resources (people, websites, documentation, etc) were used:
 
-[Thymeleaf docs](https://www.thymeleaf.org/doc/articles/standardurlsyntax.html)  
+[Help.md in this repo](./HELP.md)  
