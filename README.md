@@ -57,6 +57,12 @@ Methods:
 
 - None for today's lab.
 
+## Build Customizations
+
+### Enable hot-reload in dev
+
+gradle-wrapper.properties is located in project_root/gradle/
+Updated gradle-wrapper.properties with the following line: `spring.devtools.restart.enabled=true`
 ## References and Resources
 
 During the development of this project the following resources (people, websites, documentation, etc) were used:
