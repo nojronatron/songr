@@ -11,7 +11,8 @@ Demonstrates learned skills in:
 
 ## Features
 
-[ ] Create a 'hello world' route at '/hello'. Verify functionality by loading the route in the browser.  
+[X] Ensure the SpringApp runs *verified with `gradlew build` and `gradle bootRun`  
+[X] Create a 'hello world' route at '/hello'. Verify functionality by loading the route in the browser.  
 [ ] Create a route that will UPPER CASE any input words => '/hello' should return a static webpage with 'HELLO' on it.  
 [ ] Build-out the uppercase route so that it will upper case *entire sentences*.  
 [ ] Create a basic splash page for the app that includes CSS styling (don't go overboard).  
@@ -23,7 +24,7 @@ Demonstrates learned skills in:
 
 To run this app you can either:
 
-- Use gradle bootRun: `./gradle bootRun``
+- Use gradle bootRun which will deploy a JAR file and run it along with an Apache server at port 8080: `./gradle bootRun`
 - Open the project in IntelliJ IDEA (or your favorite IDE with Java support) and click the Run button.
 
 The project includes Spring frameworks that includes a running Apache web server, default port: 8080.
