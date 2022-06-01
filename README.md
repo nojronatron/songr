@@ -8,9 +8,17 @@ Demonstrates learned skills in:
 - Spring Initializr, Boot DevTools, and Thymeleaf
 - Gradle  
 - HTML and CSS/Bootstrap
+- PostgreSQL 14.3
+- JPA persistence API
+- JDBC database connection wrapper
+- 
 
 ## Features
 
+[ ] Update Album model so that it can be used with / saved in a database.  
+[ ] Album Class should have title, artist, songCount, length (seconds) and imageUrl.  
+[ ] User should be able to see information about all the albums on the site.  
+[ ] User should be able to add albums to the site.  
 [X] Ensure the SpringApp runs *verified with `gradlew build` and `gradle bootRun`  
 [X] Create a 'hello world' route at '/hello'. Verify functionality by loading the route in the browser.  
 [X] Create a route that will UPPER CASE any input words => '/hello' should return a static webpage with 'HELLO' on it.  
@@ -67,6 +75,22 @@ Updated gradle-wrapper.properties with the following line: `spring.devtools.rest
 See [using devtools](https://docs.spring.io/spring-boot/docs/2.7.0/reference/htmlsingle/#using.devtools) for details.  
 
 ...if only it would work...
+
+### Other Setup Dependencies
+
+application.properties
+
+The following dependencies are necessary to wire-up the database to this project:
+
+```text
+dependencies {
+	implementation('org.springframework.boot:spring-boot-starter-data-jpa')
+	implementation('org.springframework.boot:spring-boot-starter-thymeleaf')
+	implementation('org.springframework.boot:spring-boot-starter-web')
+	runtimeOnly('org.postgresql:postgresql')
+	testImplementation('org.springframework.boot:spring-boot-starter-test')
+}
+```
 
 ## References and Resources
 
