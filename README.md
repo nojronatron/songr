@@ -16,9 +16,9 @@ Demonstrates learned skills in:
 [X] Create a route that will UPPER CASE any input words => '/hello' should return a static webpage with 'HELLO' on it.  
 [X] Build-out the uppercase route so that it will upper case *entire sentences*.  
 [X] Create a basic splash page for the app that includes CSS styling (don't go overboard).  
-[ ] Create an Album class as a model in the app. See details below.  
-[ ] Create a route '/albums' that returns three Album instances with hardcoded data on a static template page.  
-[ ] Test constructors, getters, and setters of the Album class.  
+[X] Create an Album class as a model in the app. See details below.  
+[X] Create a route '/albums' that returns three Album instances with hardcoded data on a static template page.  
+[X] Test constructors, getters, and setters of the Album class.  
 
 ## How to Run
 
@@ -66,10 +66,16 @@ Updated gradle-wrapper.properties with the following line: `spring.devtools.rest
 
 See [using devtools](https://docs.spring.io/spring-boot/docs/2.7.0/reference/htmlsingle/#using.devtools) for details.  
 
+...if only it would work...
+
 ## References and Resources
 
 During the development of this project the following resources (people, websites, documentation, etc) were used:
 
+Thanks to Ben Mills for pointing me in the right direction with displaying Images and using TH: attributes!  
+
 [Help.md in this repo](./HELP.md)  
 
 Album Art developed on [Canva](https://www.canva.com)  
+
+ThymeLeaf [documentation on attributes](https://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html#variables)  
