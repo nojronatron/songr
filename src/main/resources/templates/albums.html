@@ -1,41 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
           crossorigin="anonymous">
-        <title>
-            songr Album List
-        </title>
+    <title>
+        songr Album List
+    </title>
 </head>
 
-<body class=".bg-info border border-dark">
-<div class="card" style="width: 18rem;">
-    <img src="/images/angr-idontcareanymore.jpg" class="card-img-top" alt="Image of new album I Dont Care Anymore by AngR.">
-    <div class="card-body">
-        <h5 class="card-title">Album: I Don't Care Anymore</h5>
-        <p class="card-text">Artist: AngR</p>
-        <a href="#" class="btn btn-primary">Get On The Waitlist!</a>
+<body>
+<article class=".bg-info border border-dark" th:each="album : ${albums}">
+    <div class="card" style="width: 18rem;">
+        <img th:src="${album.imageUrl}" th:alt="${album.title}" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title"><span th:text="${album.title}"></span></h5>
+            <p class="card-text">Artist: <span th:text="${album.artist}"></span></p>
+            <p class="card-text">Tracks: <span th:text="${album.songCount}"></span></p>
+            <p class="card-text">Album Length: <span th:text="${album.length}"></span></p>
+            <a href="#" class="btn btn-primary">Get On The Waitlist!</a>
+        </div>
     </div>
-</div>
 
-<div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">Album title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">Album title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-</div>
+</article>
 </body>
 </html>
