@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+          crossorigin="anonymous">
+    <title>
+        songr Album List
+    </title>
+</head>
+
+<body>
+<article class=".bg-info border border-dark" th:each="album : ${albums}">
+    <div class="card" style="width: 18rem;">
+        <img th:src="${album.imageUrl}" th:alt="${album.title}" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title"><span th:text="${album.title}"></span></h5>
+            <p class="card-text">Artist: <span th:text="${album.artist}"></span></p>
+            <p class="card-text">Tracks: <span th:text="${album.songCount}"></span></p>
+            <p class="card-text">Album Length: <span th:text="${album.length}"></span></p>
+            <a href="#" class="btn btn-primary">Get On The Waitlist!</a>
+        </div>
+    </div>
+
+</article>
+</body>
+</html>
