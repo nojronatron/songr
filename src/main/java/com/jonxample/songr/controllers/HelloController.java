@@ -1,6 +1,9 @@
 package com.jonxample.songr.controllers;
 
 import com.jonxample.songr.Album;
+import com.jonxample.songr.repositories.AlbumRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,8 +17,10 @@ import java.util.Locale;
 @Controller
 @RequestMapping("/")
 public class HelloController {
-    // Request method route
-    // call a template to display a page
+    //  wires up the repo to this controller
+    @Autowired
+    AlbumRepository albumRepository;
+
     @GetMapping("hello")
     public String helloWorld() {
         return "hello";
