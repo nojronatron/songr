@@ -1,4 +1,4 @@
-package com.jonxample.songr;
+package com.jonxample.songr.models;
 
 import javax.persistence.*;
 
@@ -6,11 +6,11 @@ import javax.persistence.*;
 public class Album {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    long id; // 255 characters
+    Long id; // 255 characters
     String title;
     String artist;
-    int songCount;
-    float length; // in seconds
+    Integer songCount;
+    Float length; // in seconds
     String imageUrl;
 
     public Album(){}
@@ -36,7 +36,7 @@ public class Album {
     public void setArtist(String artist) {
         this.artist = artist;
     }
-    public int getSongCount() {
+    public Integer getSongCount() {
         return this.songCount;
     }
     public void setSongCount(Integer songCount){
