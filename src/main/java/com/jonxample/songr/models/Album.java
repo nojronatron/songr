@@ -1,6 +1,7 @@
 package com.jonxample.songr.models;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 
 @Entity
 public class Album {
@@ -12,6 +13,9 @@ public class Album {
     Integer songCount;
     Float length; // in seconds
     String imageUrl;
+
+    @OneToMany(mappedBy="album")
+    ArrayList<String> albums;
 
     public Album(){}
     public Album(String albumTitle, String artistName,
