@@ -1,9 +1,10 @@
 package com.jonxample.songr.models;
 
 import javax.persistence.*;
-import java.util.ArrayList;
+import java.util.List;
 
 @Entity
+@Table(name="Album")
 public class Album {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -14,8 +15,16 @@ public class Album {
     Float length; // in seconds
     String imageUrl;
 
+    public List<String> getSongs() {
+        return songs;
+    }
+
+    public void setSongs(List<String> songs) {
+        this.songs = songs;
+    }
+
     @OneToMany(mappedBy="album")
-    ArrayList<String> albums;
+    List<String> songs;
 
     public Album(){}
     public Album(String albumTitle, String artistName,

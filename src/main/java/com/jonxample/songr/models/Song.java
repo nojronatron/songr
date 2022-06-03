@@ -3,6 +3,7 @@ package com.jonxample.songr.models;
 import javax.persistence.*;
 
 @Entity
+@Table(name="Song")
 public class Song {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
@@ -18,10 +19,11 @@ public class Song {
     public Song() {
     }
 
-    public Song(String title, Float length, Integer trackNumber) {
+    public Song(String title, Float length, Integer trackNumber, Album album) {
         this.title = title;
         this.length = length;
         this.trackNumber = trackNumber;
+        this.album = album;
     }
 
     public Long getId() {

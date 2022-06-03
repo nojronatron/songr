@@ -29,8 +29,6 @@ public class HelloController {
         return result;
     }
 
-
-
     @RequestMapping("/")
     public String rootRoute() {
         return "index";
