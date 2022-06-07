@@ -15,16 +15,10 @@ public class Album {
     Float length; // in seconds
     String imageUrl;
 
-    public List<String> getSongs() {
-        return songs;
-    }
 
-    public void setSongs(List<String> songs) {
-        this.songs = songs;
-    }
 
     @OneToMany(mappedBy="album")
-    List<String> songs;
+    List<Song> songs;
 
     public Album(){}
     public Album(String albumTitle, String artistName,
@@ -66,5 +60,17 @@ public class Album {
     }
     public void setImageUrl(String imageUrl){
         this.imageUrl = imageUrl;
+    }
+    public List<Song> getSongs() {
+        return songs;
+    }
+    public void setSongs(List<Song> songs) {
+        this.songs = songs;
+    }
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
     }
 }

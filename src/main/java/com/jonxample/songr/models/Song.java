@@ -13,6 +13,14 @@ public class Song {
     Float length; // seconds
     Integer trackNumber; // the track number on an album??
 
+    public Album getAlbum() {
+        return album;
+    }
+
+    public void setAlbum(Album album) {
+        this.album = album;
+    }
+
     @ManyToOne
     Album album;
 
